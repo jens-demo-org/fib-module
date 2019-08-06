@@ -11,10 +11,8 @@ jobs:
     name: Build
     strategy:
       matrix:
-        # node_vsn: ['8', '10', '12']
-        node_vsn: ['12']
-        # os: [macOS-latest, ubuntu-latest, windows-latest]
-        os: [ubuntu-latest]
+        node_vsn: ['8', '10', '12']
+        os: [macOS-latest, ubuntu-latest, windows-latest]
     runs-on: ${{matrix.os}}
 
     steps:
