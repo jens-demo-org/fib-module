@@ -1,5 +1,5 @@
 {
-  "name": "fib",
+  "name": "@jeremyepling/node-module",
   "version": "0.0.0",
   "description": "Functions for working with the Fibonacci sequence",
   "main": "index.js",
