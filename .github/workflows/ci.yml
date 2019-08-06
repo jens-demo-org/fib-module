@@ -29,13 +29,13 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-        if: github.event_name == 'create'
+        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
       - run: echo sha ${{github.sha}}
-        if: github.event_name == 'create'
+        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
       - run: echo ref ${{github.ref}}
-        if: github.event_name == 'create'
+        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
       - run: echo event_name ${{github.event_name}}
-        if: github.event_name == 'create'
+        if: github.event_name == 'create' && startsWith(github.ref, 'refs/tags/v')
       # - uses: actions/checkout@master
       # - uses: actions/setup-node@auth
       #   with:
