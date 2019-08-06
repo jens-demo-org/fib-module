@@ -1,6 +1,6 @@
 {
   "name": "@jeremyepling/node-module",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Functions for working with the Fibonacci sequence",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jeremyepling/node-module.git"
+    "url": "git://github.com/jeremyepling/node-module.git"
   },
   "author": "Jonathan Clem <jclem@github.com>",
   "license": "MIT",
