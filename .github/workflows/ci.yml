@@ -1,0 +1,22 @@
+on:
+  pull_request:
+  push: {branches: [master]}
+  repository_dispatch:
+
+name: CI
+
+jobs:
+  build:
+    name: Build
+    strategy:
+      matrix:
+        node_vsn: ['8', '10', '12']
+        os: [macOS-latest, ubuntu-latest, windows-latest]
+    runs-on: ${{matrix.os}}
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with: {version: '${{matrix.node_vsn}}'}
+      - run: npm ci
+      - run: npm test -- --ci --color --verbose
