@@ -1,6 +1,6 @@
 {
   "name": "@jeremyepling/node-module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Functions for working with the Fibonacci sequence",
   "main": "index.js",
   "scripts": {
