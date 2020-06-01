@@ -1,4 +1,4 @@
-# @jeremyepling/node-module
+# @jenschelkopf/node-module
 
 This module provides helper functions for the Fibonacci sequence.
 
